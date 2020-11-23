@@ -1,6 +1,9 @@
 import AboutUs from './pages/AboutUs'
 import GlobalStyle from './components/GlobalStyle'
 import Nav from './components/Nav'
+import ContactUs from './pages/ContactUs'
+import OurWork from './pages/OurWork'
+import { Switch, Route } from 'react-router-dom'
 // const { default: AboutSection } = require("./components/AboutSection");
 
 
@@ -9,7 +12,17 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <AboutUs />
+      <Switch>
+        <Route path="/" exact>
+          <AboutUs />
+        </Route>
+        <Route path="/work">
+          <OurWork />
+        </Route>
+        <Route path="/contact">
+          <ContactUs />
+        </Route>
+      </Switch>
     </div>
   );
 }
