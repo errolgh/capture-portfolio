@@ -12,12 +12,27 @@ export default function MovieDetail(){
 
     useEffect(()=>{
         const currentMovie = movies.filter(stateMovie => stateMovie.url === url)
-        setMovie(currentMovie)
+        setMovie(currentMovie[0])
     }, [movies, url])
 
     return(
-        <div>
-            <h1>MovieDetail</h1>
-        </div>
+        <>
+            {movie && (
+                <StyledDetails>
+                    <StyledHeadLine>
+                        <h2>{movie.title}</h2>
+                        <img src={movie.mainImg} alt="movie"/>
+                    </StyledHeadLine>
+                </StyledDetails>
+            )}
+        </>
     )
 }
+
+const StyledDetails = styled.div`
+    
+`
+
+const StyledHeadLine = styled.div`
+
+`
