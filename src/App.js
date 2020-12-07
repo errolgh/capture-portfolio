@@ -32,4 +32,4 @@ function App() {
 }
 
 export default App;
-// Chapter 4, 11. Movie Details 00:22'52"
+// Chapter 4, 12. Framer Motion 00:00'00"
