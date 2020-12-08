@@ -1,24 +1,26 @@
 import home1 from '../img/home1.png'
-// import styled from 'styled-components'
+import { motion } from 'framer-motion'
 import { StyledAbout, StyledDescription, StyledImage, StyledHide } from '../styles'
 
 export default function AboutSection(){
     return(
         <StyledAbout> 
             <StyledDescription>
-                <div className="title">
+                <motion.div className="title">
                     <StyledHide>
-                        <h2>We work to make</h2>
+                        <motion.h2>
+                            We work to make
+                        </motion.h2>
                     </StyledHide>
                     <StyledHide>
-                        <h2>
+                        <motion.h2>
                             your <span>dreams</span> come
-                        </h2>
+                        </motion.h2>
                     </StyledHide>
                     <StyledHide>
-                        <h2>true.</h2>
+                        <motion.h2>true.</motion.h2>
                     </StyledHide>
-                </div>
+                </motion.div>
                 <p>Contact us for any photography or videography ideas that you have. We have professionals with amazing skills.</p>
                 <button>Contact Us</button>
             </StyledDescription>
