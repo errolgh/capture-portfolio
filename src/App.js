@@ -37,7 +37,7 @@ function App() {
 }
 
 export default App;
-// Chapter 4, 13. Page Transitions 00:10'50"
+// Chapter 4, 18. Finishing Faq Animation 00:00'50"
 
 
 

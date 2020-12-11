@@ -5,7 +5,8 @@ import teamwork from '../img/teamwork.svg'
 import home2 from '../img/home2.png'
 import styled from 'styled-components'
 import { StyledAbout, StyledDescription, StyledImage, StyledHide } from '../styles'
-
+import { useInView } from 'react-intersection-observer'
+import { useAnimation } from 'framer-motion'
 
 
 export default function ServicesSection() {

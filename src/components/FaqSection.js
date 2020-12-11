@@ -1,54 +1,46 @@
 import styled from 'styled-components'
 import { StyledAbout } from '../styles'
 import Toggle from './Toggle'
+import { AnimateSharedLayout } from 'framer-motion'
 
 export default function FaqSection(){
     return(
         <StyledFaq>
             <h2>Any Questions <span>FAQ</span></h2>
-            <Toggle>
-                <div className="question">
-                    <h4>How Do I Start?</h4>
-                    <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nemo nihil nam mollitia eaque sit necessitatibus nisi doloremque fuga impedit.
-                        </p>
-                    </div>
-                    <div className="faq-line"></div>
-                </div>
-            </Toggle>
-            <Toggle>
-                <div className="question">
-                    <h4>Daily Schedule</h4>
-                    <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum.
-                        </p>
-                    </div>
-                    <div className="faq-line"></div>
-                </div>
-            </Toggle>
-            <div className="question">
-                <h4>Different Payment Methods</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum.
-                    </p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <div>
-                    <h4>What Products Do You Offer?</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum.
-                    </p>
-                </div>
-            </div>
+            <AnimateSharedLayout>
+                <Toggle title="How Do I Start?">
+                        <div className="answer">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nemo nihil nam mollitia eaque sit necessitatibus nisi doloremque fuga impedit.
+                            </p>
+                        </div>
+                </Toggle>
+                <Toggle title="Daily Schedule">
+                        <div className="answer">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum.
+                            </p>
+                        </div>
+                </Toggle>
+                <Toggle title="Different Payment Methods">
+                        <div className="answer">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum.
+                            </p>
+                        </div>
+                </Toggle>
+                <Toggle title="What Products Do You Offer?">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum.
+                            </p>
+                        </div>
+                </Toggle>
+            </AnimateSharedLayout>
         </StyledFaq>
     )
 }
