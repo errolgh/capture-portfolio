@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import { useHistory } from 'react-router-dom'
 import movieState from '../movieState'
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { pageAnimation } from '../animation'
 
 
 export default function MovieDetail(){
@@ -18,7 +20,7 @@ export default function MovieDetail(){
     return(
         <>
             {movie && (
-                <StyledDetails>
+                <StyledDetails exit="exit" variants={pageAnimation} initial="hidden" animate="show">
                     <StyledHeadLine>
                         <h2>{movie.title}</h2>
                         <img src={movie.mainImg} alt="movie"/>
@@ -45,7 +47,7 @@ const StyledDetails = styled.div`
     color: white;
 `
 
-const StyledHeadLine = styled.div`
+const StyledHeadLine = styled(motion.div)`
     min-height: 90vh;
     margin-top: 20vh;
     position: relative;

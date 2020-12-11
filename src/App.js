@@ -38,3 +38,9 @@ function App() {
 
 export default App;
 // Chapter 4, 13. Page Transitions 00:10'50"
+
+
+
+
+
+//bug for color on page change happened after framer motion video (4.12)

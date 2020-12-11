@@ -1,33 +1,38 @@
 import styled from 'styled-components'
 import { StyledAbout } from '../styles'
+import Toggle from './Toggle'
 
 export default function FaqSection(){
     return(
         <StyledFaq>
             <h2>Any Questions <span>FAQ</span></h2>
-            <div className="question">
-                <h4>How Do I Start?</h4>
-                <div>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum.
-                    </p>
+            <Toggle>
+                <div className="question">
+                    <h4>How Do I Start?</h4>
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nemo nihil nam mollitia eaque sit necessitatibus nisi doloremque fuga impedit.
+                        </p>
+                    </div>
+                    <div className="faq-line"></div>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>Daily Schedule</h4>
-                <div>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum.
-                    </p>
+            </Toggle>
+            <Toggle>
+                <div className="question">
+                    <h4>Daily Schedule</h4>
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum.
+                        </p>
+                    </div>
+                    <div className="faq-line"></div>
                 </div>
-                <div className="faq-line"></div>
-            </div>
+            </Toggle>
             <div className="question">
                 <h4>Different Payment Methods</h4>
-                <div>
+                <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum.
@@ -36,11 +41,13 @@ export default function FaqSection(){
                 <div className="faq-line"></div>
             </div>
             <div className="question">
-                <h4>What Products Do You Offer?</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum.
-                </p>
+                <div>
+                    <h4>What Products Do You Offer?</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum.
+                    </p>
+                </div>
             </div>
         </StyledFaq>
     )

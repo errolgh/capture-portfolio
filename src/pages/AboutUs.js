@@ -6,7 +6,7 @@ import { pageAnimation } from '../animation'
 
 export default function AboutUs(){
     return(
-        <motion.div exit="exit" variants={pageAnimation} intial="hidden" animate="show">
+        <motion.div variants={pageAnimation} exit="exit" initial="hidden" animate="show">
             <AboutSection />
             <ServicesSection />
             <FaqSection />
