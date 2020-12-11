@@ -37,10 +37,4 @@ function App() {
 }
 
 export default App;
-// Chapter 4, 18. Finishing Faq Animation 00:00'50"
-
-
-
-
-
-//bug for color on page change happened after framer motion video (4.12)
+// Chapter 4, 19. Scroll Animations 00:02'13"
