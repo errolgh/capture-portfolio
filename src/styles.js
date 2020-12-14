@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 // name this const the same as the parent div (wrapper div for component)
-export const StyledAbout = styled.div`
+export const StyledAbout = styled(motion.div)`
     min-height: 90vh;
     display: flex;
     align-items: center;

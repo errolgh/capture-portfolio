@@ -5,13 +5,14 @@ import teamwork from '../img/teamwork.svg'
 import home2 from '../img/home2.png'
 import styled from 'styled-components'
 import { StyledAbout, StyledDescription, StyledImage, StyledHide } from '../styles'
-import { useInView } from 'react-intersection-observer'
-import { useAnimation } from 'framer-motion'
+import { scrollReveal } from '../animation'
+import { useScroll } from './useScroll'
 
 
 export default function ServicesSection() {
+    const [ element, controls ] = useScroll()
     return(
-        <StyledServices>
+        <StyledServices variants={ scrollReveal } animate={controls} initial="hidden" ref={element}>
             <StyledDescription>
                 <h2>High <span>quality</span> service.</h2>
                 <StyledCards>

@@ -37,4 +37,4 @@ function App() {
 }
 
 export default App;
-// Chapter 4, 19. Scroll Animations 00:02'13"
+// Chapter 4, 22. Weird Quirks 00:01'20"
