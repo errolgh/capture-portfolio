@@ -6,6 +6,8 @@ import OurWork from './pages/OurWork'
 import { Switch, Route, useLocation } from 'react-router-dom'
 import MovieDetail from './pages/MovieDetail'
 import { AnimatePresence } from 'framer-motion'
+import  ScrollTop  from './components/ScrollTop'
+
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
       <GlobalStyle />
       <Nav />
       <AnimatePresence exitBeforeEnter>
+      <ScrollTop />
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
             <AboutUs />

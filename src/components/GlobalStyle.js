@@ -8,6 +8,18 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
 }
 
+
+
+html {
+    @media (max-width: 1700px) {
+        font-size: 80%;
+    }
+    @media (max-width: 1200px) {
+        font-size: 50%;
+    }
+}
+
+
 body {
     background: #1b1b1b;
     font-family: 'Inter', sans-serif;
